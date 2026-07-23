@@ -4,6 +4,7 @@ const noteSchema = new mongoose.Schema({
     title: {type: String, required: true},
     content: String,
     category: {
+         type: String,
         enum: ['personal', 'work', 'study', 'ideas' ,'journal','other'],
     },
     tags: [String],
