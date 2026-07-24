@@ -13,6 +13,7 @@ const smartphoneSchema = new mongoose.Schema({
     connectivity: [String],
     price: Number,
     colorOptions: [String],
+    features: [String],
 },
 {timestamps: true});
 
