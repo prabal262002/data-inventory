@@ -12,9 +12,11 @@ app.use(express.json());
 
 initializeDB();
 
-const jsonData = fs.readFileSync("books.json", "utf-8");
-const booksData = JSON.parse(jsonData);
+// const jsonData = fs.readFileSync("books.json", "utf-8");
+// const booksData = JSON.parse(jsonData);
 
+// const filePath = path.join(process.cwd(), 'books.json');
+// const fileData = fs.readFileSync(filePath, 'utf8');
 // function seedData(){
 //     try{
 //         for(const book of booksData){
