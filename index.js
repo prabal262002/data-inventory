@@ -40,7 +40,7 @@ initializeDB();
 // }
 
 // seedData();
-const PORT = 6000;
+const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port - ${PORT}.`);
 });
@@ -82,7 +82,7 @@ app.get("/books", async (req, res) => {
     if (allBooks) {
       res.status(200).json(allBooks);
     } else {
-      res.status(400).json({ error: `Error reading the restaurants` });
+      res.status(400).json({ error: `Error reading the books` });
     }
   } catch (error) {
     res.status(400).json({ error: `Failed!! - ${error}` });
